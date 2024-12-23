@@ -1,0 +1,66 @@
+/* css for booking form style */
+h1 {
+    text-align: center;
+    display: block;
+    padding: 25px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+/* style for each input field, get the label and input on the same level */
+.form-group {
+    position: relative;
+    display: flex;
+    margin: 40px 20px;
+    justify-content: center;
+
+  }
+/* style for the ipput label */
+.form-group a {
+    font-weight: bolder;
+    margin-right: 10px; 
+    height: fit-content; 
+    align-self:center 
+}
+/* style for both label and input, set them on the same line without starting a new line  */
+.form-control {
+    flex: 1; 
+}
+/* style for 'details' title */
+.detail {
+    margin: 20px;
+}
+/* style for whole form block */
+.detail-block {
+    border: 5px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+}
+/* style for booking form title */
+h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+/* style for button */
+button  {
+    margin-top: 12px;
+}
+/* style for seperate line */
+hr {
+    display: block;
+    margin: 30px 20px;
+}
+/* style for error message */
+.invalid-feedback {
+    position: absolute;
+    margin-top: 40px; 
+    text-align: right;
+    color: red;
+  }
+/* style for homepage hypelink */
+#homepage {
+    display: flex;
+    justify-content: center;
+}

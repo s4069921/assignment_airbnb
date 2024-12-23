@@ -1,0 +1,53 @@
+/* css for home page style */
+/* Title style */
+h1 {
+  text-align: center;
+  display: block;
+  padding: 25px;
+  font-weight: bold;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+/* search bar style *, divide each input field evenly*/
+.form-grid {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 0.5fr;
+  align-items: center;
+  gap: 15px; 
+  margin-left: 15px;
+  margin-right: 15px;
+  
+}
+/* set 3 search bars on the same level */
+.form-group {
+  display: block;
+  flex: 1; 
+}
+/* set button style */
+.btn-primary {
+  height: fit-content; 
+  align-self: start; 
+}
+/* set the style of listings display */
+.data-block {
+  border: 5px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+}
+/* set the style of listings title */
+.data-block h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+/* set the style of listings summary */
+.data-block .summary {
+  margin: 15px 0;
+}
+/* set the style of listings price and rating */
+.data-block .price, .rating{
+  font-weight: bold;
+  margin-bottom: 0;
+}
+

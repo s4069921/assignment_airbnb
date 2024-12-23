@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Booking</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./booking.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+  <h1>Let's book the property</h1>
+  <!-- booking form area -->
+  <form id="bookingForm" class="needs-validation" novalidate>
+    <div class="detail-block">
+        <h3 class="detail">Booking Details</h3>
+        <!-- check in field -->
+        <div class="form-group">
+        <a for="checkin">Check in:</a>
+        <input type="date" class="form-control" id="checkin" name="checkin" placeholder="Enter check-in date (dd/mm/yyyy)" required>
+        <div class="invalid-feedback">Check-in date should not be null.</div>
+        </div>
+        <!-- check out field -->
+        <div class="form-group">
+        <a for="checkout">Check out:</a>
+        <input type="date" class="form-control" id="checkout" name="checkout" placeholder="Enter check-out date (dd/mm/yyyy)" required>
+        <div class="invalid-feedback">Check-out date should not be null.</div>
+        </div>
+        <!-- draw a line to seperate different fields -->
+        <hr></hr>
+        <h3 class="detail">Your Details</h3>
+        <!-- name field -->
+        <div class="form-group">
+            <a for="name">Your Name:</a>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Please enter your name (mandatory)" required>
+            <div class="invalid-feedback">Name should not be null.</div>
+        </div>
+        <!-- email field -->
+        <div class="form-group">
+            <a for="email">Email Address:</a>
+            <input type="email" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" class="form-control" id="email" name="email" placeholder="Please enter your email address (mandatory)" required>
+            <div class="invalid-feedback">Email Address should not be null.</div>
+        </div>
+        <!-- mobile field -->
+        <div class="form-group">
+            <a for="mobile">Your Mobile No:</a>
+            <input type="number" class="form-control" id="mobile" name="mobile" placeholder="Please enter your mobile no:(04xxxx xxx xxx) (mandatory)" required>
+            <div class="invalid-feedback">Mobile Number should not be null.</div>
+        </div>
+        <!-- postal address field -->
+        <div class="form-group">
+            <a for="postal">Postal Address:</a>
+            <input type="text" class="form-control" id="postal" name="postal" placeholder="Please provide your postal address.">
+            <div class="invalid-feedback">Please provide a postal address.</div>
+        </div>
+        <!-- residential address field -->
+        <div class="form-group">
+            <a for="residential">Residential Address:</a>
+            <input type="text" class="form-control" id="residential" name="residential" placeholder="Please provide your residential address. (cannot be a post box address)">
+            <div class="invalid-feedback">Please provide a valid residential address.</div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Book Now</button>
+        </div>
+    </div>
+  </form>
+
+  <div id="error-message"></div>
+  <script src="/bookings.js"></script>
+</body>
+
+</html>
